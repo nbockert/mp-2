@@ -9,6 +9,13 @@ const PropDiv=styled.div`
     background-color: lightpink;
     
 `;
+const Header=styled.h1`
+   text-align: center;
+    font: italic small-caps bold calc(3px+ 2vw) Georgia, serif;
+    color: hotpink;
+    
+`;
+
 const SinglePropDiv =styled.div<{price: number}>`
     display: flex;
     flex-direction: column;
@@ -25,6 +32,8 @@ const SinglePropDiv =styled.div<{price: number}>`
 
 export default function PropertyList(props :{data:Property[]}){
     return(
+        <>
+            <Header>Apartments Near San Francisco Bay Area</Header>
         <PropDiv>
             {
                 props.data.map((prop:Property) =>
@@ -40,6 +49,7 @@ export default function PropertyList(props :{data:Property[]}){
                     </SinglePropDiv>)
             }
         </PropDiv>
+        </>
     );
 
 }
