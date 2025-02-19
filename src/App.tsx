@@ -11,7 +11,7 @@ border: 5px solid hotpink;
 justify-content: center;
 align-items: center;`;
 
-const API_URL = "https://zillow-com1.p.rapidapi.com/propertyExtendedSearch?location=94105&page=3&status_type=ForRent&home_type=Apartments_Condos_Co-ops&sort=Payment_Low_High&rentMaxPrice=4000&bedsMax=1";
+const API_URL = "https://zillow-com1.p.rapidapi.com/propertyExtendedSearch?location=94105&status_type=ForRent&home_type=Apartments_Condos_Co-ops&sort=Payment_Low_High&rentMaxPrice=4000&bedsMax=1";
 console.log("API Key:", import.meta.env.VITE_RAPIDAPI_KEY);
 
 const options = {
